@@ -28,9 +28,13 @@ public class PlayerTestState : PlayerBaseState
         // rotation
         if (stateMachine.InputReader.MovementValue == Vector2.zero)
         {
+            // if idle, play idle animation
+            stateMachine.Animator.SetFloat("FreeLookSpeed", 0, 0.1f, deltaTime);
             return;
         }
 
+        // if moving, play run animation
+        stateMachine.Animator.SetFloat("FreeLookSpeed", 1, 0.0f, deltaTime);
         stateMachine.transform.rotation = Quaternion.LookRotation(movement);
 
         //Debug.Log(stateMachine.InputReader.MovementValue);

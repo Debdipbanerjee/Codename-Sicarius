@@ -1285,7 +1285,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <InputReader>k__BackingField: {fileID: 6780028603184823747}
   <Controller>k__BackingField: {fileID: 6780028603184823750}
-  <FreeLookMovementSpeed>k__BackingField: 6
+  <Animator>k__BackingField: {fileID: 6780028603184823749}
+  <FreeLookMovementSpeed>k__BackingField: 5
 --- !u!114 &6780028603184823747
 MonoBehaviour:
   m_ObjectHideFlags: 0
