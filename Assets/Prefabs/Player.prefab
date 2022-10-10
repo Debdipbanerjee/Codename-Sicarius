@@ -1246,6 +1246,7 @@ GameObject:
   - component: {fileID: 6780028603184823748}
   - component: {fileID: 6780028603184823747}
   - component: {fileID: 6780028603184823749}
+  - component: {fileID: 6780028603184823750}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1283,6 +1284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <InputReader>k__BackingField: {fileID: 6780028603184823747}
+  <Controller>k__BackingField: {fileID: 6780028603184823750}
+  <FreeLookMovementSpeed>k__BackingField: 6
 --- !u!114 &6780028603184823747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1318,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &6780028603184823750
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5341332497356142177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.4
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.04
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &5846002863992306619
 GameObject:
   m_ObjectHideFlags: 0
