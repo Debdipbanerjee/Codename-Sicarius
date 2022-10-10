@@ -482,33 +482,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29e55726ebd8178499bafa4e39572e30, type: 3}
---- !u!1 &6780028603184823746 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5341332497356142177, guid: 29e55726ebd8178499bafa4e39572e30, type: 3}
-  m_PrefabInstance: {fileID: 1456837019718650787}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6780028603184823747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6780028603184823746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d5d033e9ecff84d9a6cf56808edd9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6780028603184823748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6780028603184823746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25d49289fdb13dc42a1a7031e47d6682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <InputReader>k__BackingField: {fileID: 6780028603184823747}

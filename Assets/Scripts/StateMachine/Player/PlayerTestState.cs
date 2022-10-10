@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerTestState : PlayerBaseState
 {
-    private float timer;
 
     public PlayerTestState(PlayerStateMachine stateMachine) : base(stateMachine)
     {
@@ -13,23 +12,24 @@ public class PlayerTestState : PlayerBaseState
     public override void Enter()
     {
         Debug.Log("Enter");
-        stateMachine.InputReader.JumpEvent += OnJump;
     }
 
     public override void Tick(float deltaTime)
     {
-        timer += deltaTime;
-        Debug.Log(timer);
+        Vector3 movement = new Vector3();
+
+        movement.x = stateMachine.InputReader.MovementValue.x;
+        movement.y = 0;
+        movement.z = stateMachine.InputReader.MovementValue.y;
+
+        stateMachine.transform.Translate(movement * deltaTime);
+
+        //Debug.Log(stateMachine.InputReader.MovementValue);
     }
 
     public override void Exit()
     {
         Debug.Log("Exit");
-        stateMachine.InputReader.JumpEvent -= OnJump;
     }
 
-    private void OnJump()
-    {
-        stateMachine.SwitchState(new PlayerTestState(stateMachine));
-    }
 }
