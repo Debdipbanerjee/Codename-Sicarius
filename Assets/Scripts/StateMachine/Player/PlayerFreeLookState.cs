@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerTestState : PlayerBaseState
+public class PlayerFreeLookState : PlayerBaseState
 {
+    private readonly int FreeLookSpeedHash = Animator.StringToHash("FreeLookSpeed");
 
-    public PlayerTestState(PlayerStateMachine stateMachine) : base(stateMachine)
+    private const float AnimatorDampTime = 0.1f;
+
+    public PlayerFreeLookState(PlayerStateMachine stateMachine) : base(stateMachine)
     {
     }
 
@@ -25,13 +28,13 @@ public class PlayerTestState : PlayerBaseState
         if (stateMachine.InputReader.MovementValue == Vector2.zero)
         {
             // if idle, play idle animation
-            stateMachine.Animator.SetFloat("FreeLookSpeed", 0, 0.1f, deltaTime);
+            stateMachine.Animator.SetFloat(FreeLookSpeedHash, 0, AnimatorDampTime, deltaTime);
             return;
         }
 
         // if moving, play run animation
-        stateMachine.Animator.SetFloat("FreeLookSpeed", 1, 0.0f, deltaTime);
-        stateMachine.transform.rotation = Quaternion.LookRotation(movement);
+        stateMachine.Animator.SetFloat(FreeLookSpeedHash, 1, AnimatorDampTime, deltaTime);
+        FaceMovementDirection(movement, deltaTime);
 
         //Debug.Log(stateMachine.InputReader.MovementValue);
     }
@@ -53,6 +56,11 @@ public class PlayerTestState : PlayerBaseState
         right.Normalize();
 
         return forward * stateMachine.InputReader.MovementValue.y + right * stateMachine.InputReader.MovementValue.x;
+    }
+
+    private void FaceMovementDirection(Vector3 movement, float deltaTime)
+    {
+        stateMachine.transform.rotation = Quaternion.Lerp(stateMachine.transform.rotation, Quaternion.LookRotation(movement), deltaTime * stateMachine.RotationDamping);
     }
 
 }
