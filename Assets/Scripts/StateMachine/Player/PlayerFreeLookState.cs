@@ -28,7 +28,7 @@ public class PlayerFreeLookState : PlayerBaseState
         // movement
         Vector3 movement = CalculateMovement();
 
-        stateMachine.Controller.Move(movement * stateMachine.FreeLookMovementSpeed * deltaTime);
+        Move(movement * stateMachine.FreeLookMovementSpeed, deltaTime);
 
         // rotation
         if (stateMachine.InputReader.MovementValue == Vector2.zero)
@@ -42,7 +42,6 @@ public class PlayerFreeLookState : PlayerBaseState
         stateMachine.Animator.SetFloat(FreeLookSpeedHash, 1, AnimatorDampTime, deltaTime);
         FaceMovementDirection(movement, deltaTime);
 
-        //Debug.Log(stateMachine.InputReader.MovementValue);
     }
 
     public override void Exit()
