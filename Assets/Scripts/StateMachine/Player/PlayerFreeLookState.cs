@@ -50,6 +50,12 @@ public class PlayerFreeLookState : PlayerBaseState
 
     private void OnTarget()
     {
+        // only enter in targeting mode if there's a target selected
+        if(!stateMachine.Targeter.SelectTarget())
+        {
+            return;
+        }
+
         stateMachine.SwitchState(new PlayerTargetingState(stateMachine));
     }
 
