@@ -204,7 +204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972678484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00000009377476, y: 0.00000035762787, z: 4.272001}
+  m_LocalPosition: {x: -0.00000025619735, y: 0.00000071525574, z: 4.272001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1172,6 +1172,10 @@ PrefabInstance:
       propertyPath: <ForceReceiver>k__BackingField
       value: 
       objectReference: {fileID: 1322957772}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <TargetingMovementSpeed>k__BackingField
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6561479474164134514, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: m_Name
       value: Player_New
