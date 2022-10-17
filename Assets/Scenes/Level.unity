@@ -3859,23 +3859,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17842492
+      value: 0.1784249
       objectReference: {fileID: 0}
     - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000031510794
+      value: -0.0000000115337535
       objectReference: {fileID: 0}
     - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000057140004
+      value: 0.0000000020914686
       objectReference: {fileID: 0}
     - target: {fileID: 972678485, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00000009377476
+      value: -0.00000025619735
       objectReference: {fileID: 0}
     - target: {fileID: 972678485, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000035762787
+      value: 0.00000071525574
       objectReference: {fileID: 0}
     - target: {fileID: 2840323668132444322, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_Name
@@ -3884,10 +3884,6 @@ PrefabInstance:
     - target: {fileID: 3700921634965234560, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: <TargetingMovementSpeed>k__BackingField
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8225649985819552747, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_RootOrder
