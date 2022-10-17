@@ -1940,29 +1940,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489602, guid: 8c4ffe1cdf6340143be5ddb96c2c0c5b, type: 3}
   m_PrefabInstance: {fileID: 1316851640}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1322957766 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4251486776383135790, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-  m_PrefabInstance: {fileID: 7713297341736308686}
-  m_PrefabAsset: {fileID: 0}
---- !u!143 &1322957768 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 4251486776383135791, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-  m_PrefabInstance: {fileID: 7713297341736308686}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1322957772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322957766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d9592ac58a3387488da5ff1e65cc6df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1322957768}
 --- !u!1001 &1353391284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2264,17 +2241,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &1483779531 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 972678486, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-  m_PrefabInstance: {fileID: 7713297341736308686}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5eb80d8e62d9d145bb50fb783c0f731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1502669663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3892,41 +3858,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.98395354
-      objectReference: {fileID: 0}
-    - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1784249
+      value: 0.17842492
       objectReference: {fileID: 0}
     - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000115337535
+      value: 0.000000031510794
       objectReference: {fileID: 0}
     - target: {fileID: 230798581, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000020914686
+      value: -0.0000000057140004
       objectReference: {fileID: 0}
     - target: {fileID: 972678485, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000025619735
+      value: 0.00000009377476
       objectReference: {fileID: 0}
     - target: {fileID: 972678485, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000071525574
+      value: 0.00000035762787
       objectReference: {fileID: 0}
-    - target: {fileID: 972678485, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.272001
-      objectReference: {fileID: 0}
-    - target: {fileID: 972678486, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: m_Targets.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 972678486, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: m_Targets.Array.data[1].target
-      value: 
-      objectReference: {fileID: 2040387446}
     - target: {fileID: 2840323668132444322, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_Name
       value: PlayerRig
@@ -3936,13 +3886,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: <ForceReceiver>k__BackingField
-      value: 
-      objectReference: {fileID: 1322957772}
-    - target: {fileID: 5053267734285831740, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: cineTargetGroup
-      value: 
-      objectReference: {fileID: 1483779531}
+      propertyPath: <TargetingMovementSpeed>k__BackingField
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8225649985819552747, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_RootOrder
       value: 7
