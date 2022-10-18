@@ -17,6 +17,7 @@ public class PlayerAttackingState : PlayerBaseState
     public override void Enter()
     {
         Debug.Log("Enter Attack State");
+        stateMachine.Weapon.SetAttack(attack.Damage);
         stateMachine.Animator.CrossFadeInFixedTime(attack.AnimationName, attack.TransitionDuration);
     }
 
