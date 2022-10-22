@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponDamage : MonoBehaviour
@@ -7,6 +8,8 @@ public class WeaponDamage : MonoBehaviour
     [SerializeField] private Collider myCollider;
 
     private int damage;
+
+    private float knockBack;
 
     private List<Collider> alreadyCollidedWith = new List<Collider>();
 
@@ -33,10 +36,17 @@ public class WeaponDamage : MonoBehaviour
         {
             health.DealDamage(damage);
         }
+
+        if(other.TryGetComponent<ForceReceiver>(out ForceReceiver forceReceiver))
+        {
+            Vector3 direction = (other.transform.position - myCollider.transform.position).normalized ;
+            forceReceiver.AddForce(direction * knockBack);
+        }
     }
 
-    public void SetAttack(int damage)
+    public void SetAttack(int damage, float knockBack)
     {
         this.damage = damage;
+        this.knockBack = knockBack;
     }
 }
