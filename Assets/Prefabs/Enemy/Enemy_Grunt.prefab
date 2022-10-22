@@ -2195,10 +2195,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4573993046284822124}
   - component: {fileID: 4476861993169371566}
+  - component: {fileID: 7571663715753029436}
   - component: {fileID: 4572083859254097015}
   - component: {fileID: 4572083859254097013}
   - component: {fileID: 4572083859254097014}
   - component: {fileID: 4572083859254097012}
+  - component: {fileID: 5417626741561730664}
   m_Layer: 0
   m_Name: Enemy_Grunt
   m_TagString: Untagged
@@ -2252,6 +2254,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!195 &7571663715753029436
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572083859254097008}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 0
+  avoidancePriority: 50
+  m_AngularSpeed: 0
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!143 &4572083859254097015
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2307,6 +2331,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df31824db6912a4fa4c284009df36f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Animator>k__BackingField: {fileID: 4476861993169371566}
+  <Controller>k__BackingField: {fileID: 4572083859254097015}
+  <ForceReceiver>k__BackingField: {fileID: 5417626741561730664}
+  <Agent>k__BackingField: {fileID: 7571663715753029436}
+  <MovementSpeed>k__BackingField: 3
+  <PlayerChasingRange>k__BackingField: 6
+--- !u!114 &5417626741561730664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572083859254097008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d9592ac58a3387488da5ff1e65cc6df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 4572083859254097015}
+  drag: 0.3
 --- !u!1 &4572136581212953796
 GameObject:
   m_ObjectHideFlags: 0
