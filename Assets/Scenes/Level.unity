@@ -3204,17 +3204,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 402700, guid: 77009d3729b694c498bdc68c9d75018d, type: 3}
   m_PrefabInstance: {fileID: 1570231501}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1705100287 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2639179004547728550, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-  m_PrefabInstance: {fileID: 7713297341736308686}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80bc7c2ec8bf952469f60e29e2c22a83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1713032702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3787,21 +3776,17 @@ PrefabInstance:
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
-      propertyPath: <Health>k__BackingField
-      value: 
-      objectReference: {fileID: 1705100287}
     - target: {fileID: 7713297341933373085, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.08130025
       objectReference: {fileID: 0}
     - target: {fileID: 7713297341933373085, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0975027
+      value: -0.097502686
       objectReference: {fileID: 0}
     - target: {fileID: 7713297341933373085, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.007991912
+      value: 0.007991911
       objectReference: {fileID: 0}
     - target: {fileID: 8225649985819552747, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_RootOrder
