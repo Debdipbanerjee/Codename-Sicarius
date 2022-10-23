@@ -16,6 +16,8 @@ public class PlayerStateMachine : StateMachine
 
     [field: SerializeField] public WeaponDamage Weapon { get; private set; }
 
+    [field: SerializeField] public Health Health { get; private set; }
+
     [field: SerializeField] public float FreeLookMovementSpeed { get; private set; }
 
     [field: SerializeField] public float TargetingMovementSpeed { get; private set; }
@@ -31,6 +33,22 @@ public class PlayerStateMachine : StateMachine
         MainCameraTransform = Camera.main.transform;
 
         SwitchState(new PlayerFreeLookState(this));
+    }
+
+    private void OnEnable()
+    {
+        Health.OnTakeDamage += HandleTakeDamage;
+    }
+
+    private void OnDisable()
+    {
+        Health.OnTakeDamage -= HandleTakeDamage;
+    }
+
+    private void HandleTakeDamage()
+    {
+        Debug.Log("Handle damage");
+        SwitchState(new PlayerImpactState(this));
     }
 
 }

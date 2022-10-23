@@ -1325,6 +1325,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 972678486}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <Health>k__BackingField
+      value: 
+      objectReference: {fileID: 2639179004547728550}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <Weapon>k__BackingField
       value: 
       objectReference: {fileID: 1181059056}
