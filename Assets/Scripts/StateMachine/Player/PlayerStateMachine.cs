@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class PlayerStateMachine : StateMachine
     [field: SerializeField] public WeaponDamage Weapon { get; private set; }
 
     [field: SerializeField] public Health Health { get; private set; }
+
+    [field: SerializeField] public Ragdoll Ragdoll { get; private set; }
 
     [field: SerializeField] public float FreeLookMovementSpeed { get; private set; }
 
@@ -38,16 +41,22 @@ public class PlayerStateMachine : StateMachine
     private void OnEnable()
     {
         Health.OnTakeDamage += HandleTakeDamage;
+        Health.OnDie += HandleDie;
     }
 
     private void OnDisable()
     {
         Health.OnTakeDamage -= HandleTakeDamage;
+        Health.OnDie -= HandleDie;
+    }
+
+    private void HandleDie()
+    {
+       SwitchState(new PlayerDeadState(this));
     }
 
     private void HandleTakeDamage()
     {
-        Debug.Log("Handle damage");
         SwitchState(new PlayerImpactState(this));
     }
 
