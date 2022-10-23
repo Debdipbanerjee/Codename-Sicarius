@@ -26,7 +26,7 @@ public class PlayerImpactState : PlayerBaseState
 
         duration -= deltaTime;
 
-        if(deltaTime <= 0f)
+        if(duration <= 0f)
         {
             ReturnToLocomotion();
         }
