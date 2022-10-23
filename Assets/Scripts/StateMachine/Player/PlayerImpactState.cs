@@ -34,6 +34,6 @@ public class PlayerImpactState : PlayerBaseState
 
     public override void Exit()
     {
-        
+        Debug.Log("Exit Player Impact state");
     }
 }

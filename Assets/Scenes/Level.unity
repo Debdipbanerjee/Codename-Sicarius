@@ -3041,8 +3041,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662236119}
-  m_LocalRotation: {x: 0.063245095, y: -0.09763197, z: 0.00621707, w: 0.99319154}
-  m_LocalPosition: {x: 25.311615, y: 1.88, z: -21.720392}
+  m_LocalRotation: {x: 0.06286739, y: -0.14256598, z: 0.00907395, w: 0.98774505}
+  m_LocalPosition: {x: 25.843582, y: 1.88, z: -21.591867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3776,17 +3776,29 @@ PrefabInstance:
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[0].<KnockBack>k__BackingField
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[1].<KnockBack>k__BackingField
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <Attacks>k__BackingField.Array.data[2].<KnockBack>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7713297341933373085, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.08130025
+      value: 0.08082354
       objectReference: {fileID: 0}
     - target: {fileID: 7713297341933373085, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.097502686
+      value: -0.14237729
       objectReference: {fileID: 0}
     - target: {fileID: 7713297341933373085, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.007991911
+      value: 0.011665645
       objectReference: {fileID: 0}
     - target: {fileID: 8225649985819552747, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_RootOrder
@@ -3849,6 +3861,10 @@ PrefabInstance:
       propertyPath: <Health>k__BackingField
       value: 
       objectReference: {fileID: 191028653}
+    - target: {fileID: 4572083859254097012, guid: 796b36734a47b6b4bb0db2c5986c0e53, type: 3}
+      propertyPath: <AttackRange>k__BackingField
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4573993046284822124, guid: 796b36734a47b6b4bb0db2c5986c0e53, type: 3}
       propertyPath: m_RootOrder
       value: 6

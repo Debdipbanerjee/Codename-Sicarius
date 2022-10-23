@@ -1362,15 +1362,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <Attacks>k__BackingField.Array.data[0].<KnockBack>k__BackingField
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <Attacks>k__BackingField.Array.data[1].<KnockBack>k__BackingField
-      value: 20
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <Attacks>k__BackingField.Array.data[2].<KnockBack>k__BackingField
-      value: 25
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <Attacks>k__BackingField.Array.data[0].<AnimationName>k__BackingField
