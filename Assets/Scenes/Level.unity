@@ -3955,13 +3955,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Companion
       objectReference: {fileID: 0}
+    - target: {fileID: 5978456718478836800, guid: 3442f1b8c4b0e3b4ba4c97ec3486dda7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5978456718479195744, guid: 3442f1b8c4b0e3b4ba4c97ec3486dda7, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5978456718479195744, guid: 3442f1b8c4b0e3b4ba4c97ec3486dda7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.856922
+      value: 22.145
       objectReference: {fileID: 0}
     - target: {fileID: 5978456718479195744, guid: 3442f1b8c4b0e3b4ba4c97ec3486dda7, type: 3}
       propertyPath: m_LocalPosition.y
