@@ -32,6 +32,8 @@ public class EnemyStateMachine : StateMachine
 
     [field: SerializeField] public float AttackKnockback { get; private set; }
 
+    [field: SerializeField] public GameObject Item { get; private set; }
+
     public GameObject Player { get; private set; }
 
     private void Start()
@@ -59,6 +61,7 @@ public class EnemyStateMachine : StateMachine
     private void HandleDie()
     {
         SwitchState(new EnemyDeadState(this));
+        Instantiate(Item,transform);
     }
 
     private void HandleTakeDamage()

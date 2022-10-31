@@ -17,6 +17,8 @@ public class PlayerStateMachine : StateMachine
 
     [field: SerializeField] public WeaponDamage Weapon { get; private set; }
 
+    [field: SerializeField] public GameObject Shield { get; private set; }
+
     [field: SerializeField] public Health Health { get; private set; }
 
     [field: SerializeField] public Ragdoll Ragdoll { get; private set; }
@@ -30,6 +32,8 @@ public class PlayerStateMachine : StateMachine
     [field: SerializeField] public Attack[] Attacks { get; private set; }
 
     public Transform MainCameraTransform { get; private set; }
+
+    [field: SerializeField] public bool canBlock { get; set; }
 
     void Start()
     {

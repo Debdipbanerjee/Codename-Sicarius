@@ -33,7 +33,7 @@ public class PlayerTargetingState : PlayerBaseState
             return;
         }
 
-        if(stateMachine.InputReader.IsBlocking)
+        if(stateMachine.InputReader.IsBlocking && stateMachine.canBlock)
         {
             stateMachine.SwitchState(new PlayerBlockingState(stateMachine));
             return;

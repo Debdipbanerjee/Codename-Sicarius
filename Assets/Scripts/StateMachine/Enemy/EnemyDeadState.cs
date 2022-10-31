@@ -14,11 +14,12 @@ public class EnemyDeadState : EnemyBaseState
         stateMachine.Ragdoll.ToggleRagdoll(true);
         stateMachine.Weapon.gameObject.SetActive(false);
         GameObject.Destroy(stateMachine.Target);
+
     }
 
     public override void Tick(float deltaTime)
     {
-
+        
     }
 
     public override void Exit()
