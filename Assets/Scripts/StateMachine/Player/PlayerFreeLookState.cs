@@ -21,6 +21,7 @@ public class PlayerFreeLookState : PlayerBaseState
         Debug.Log("Enter Free Look state");
 
         stateMachine.InputReader.TargetEvent += OnTarget;
+        stateMachine.InputReader.JumpEvent += OnJump;
 
         stateMachine.Animator.CrossFadeInFixedTime(FreeLookBlendTreeHash, CrossFadeDuration);
     }
@@ -58,17 +59,23 @@ public class PlayerFreeLookState : PlayerBaseState
         Debug.Log("Exit Free Look State");
 
         stateMachine.InputReader.TargetEvent -= OnTarget;
+        stateMachine.InputReader.JumpEvent -= OnJump;
     }
 
     private void OnTarget()
     {
         // only enter in targeting mode if there's a target selected
-        if(!stateMachine.Targeter.SelectTarget())
+        if (!stateMachine.Targeter.SelectTarget())
         {
             return;
         }
 
         stateMachine.SwitchState(new PlayerTargetingState(stateMachine));
+    }
+
+    private void OnJump()
+    {
+        stateMachine.SwitchState(new PlayerJumpingState(stateMachine));
     }
 
     private Vector3 CalculateMovement()

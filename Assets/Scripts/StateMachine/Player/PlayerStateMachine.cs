@@ -35,6 +35,8 @@ public class PlayerStateMachine : StateMachine
 
     [field: SerializeField] public float DodgeCooldown { get; private set; } = Mathf.NegativeInfinity;
 
+    [field: SerializeField] public float JumpForce { get; private set; }
+
     [field: SerializeField] public Attack[] Attacks { get; private set; }
 
     public float PreviousDodgeTime { get; private set; }

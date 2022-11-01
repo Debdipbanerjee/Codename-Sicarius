@@ -4032,6 +4032,22 @@ PrefabInstance:
       propertyPath: <canBlock>k__BackingField
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <JumpForce>k__BackingField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <DodgeLength>k__BackingField
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <DodgeCooldown>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251486776383135789, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
+      propertyPath: <DodgeDuration>k__BackingField
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4251486776383135790, guid: 43742c1fddabffb44b66ceeb5e31e6ea, type: 3}
       propertyPath: m_IsActive
       value: 1
