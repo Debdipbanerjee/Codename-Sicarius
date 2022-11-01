@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class EnemyDeadState : EnemyBaseState
 {
@@ -14,6 +15,9 @@ public class EnemyDeadState : EnemyBaseState
         stateMachine.Ragdoll.ToggleRagdoll(true);
         stateMachine.Weapon.gameObject.SetActive(false);
         GameObject.Destroy(stateMachine.Target);
+
+        Vector3 SpawnPosition = new Vector3(stateMachine.transform.position.x, stateMachine.transform.position.y + stateMachine.SpawnHeight, stateMachine.transform.position.z);
+        Transform.Instantiate(stateMachine.Item, SpawnPosition, stateMachine.transform.rotation);
 
     }
 
