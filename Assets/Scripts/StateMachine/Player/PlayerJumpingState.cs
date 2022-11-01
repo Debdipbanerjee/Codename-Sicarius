@@ -47,6 +47,9 @@ public class PlayerJumpingState : PlayerBaseState
 
     private void HandleLedgeDetect(Vector3 ledgeForward)
     {
-        stateMachine.SwitchState(new PlayerHangingState(stateMachine, ledgeForward));
+        if(stateMachine.canClimb)
+        {
+            stateMachine.SwitchState(new PlayerHangingState(stateMachine, ledgeForward));
+        }
     }
 }
