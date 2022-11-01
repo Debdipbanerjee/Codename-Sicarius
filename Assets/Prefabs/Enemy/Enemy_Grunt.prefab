@@ -3088,7 +3088,7 @@ MonoBehaviour:
   <MovementSpeed>k__BackingField: 3
   <PlayerChasingRange>k__BackingField: 10
   <AttackRange>k__BackingField: 1.5
-  <AttackDamage>k__BackingField: 20
+  <AttackDamage>k__BackingField: 10
   <AttackKnockback>k__BackingField: 10
   <SpawnHeight>k__BackingField: 0.8
   <Item>k__BackingField: {fileID: 6767800840265333703, guid: a500b11dfc5361d4dac656abad1579b7, type: 3}
