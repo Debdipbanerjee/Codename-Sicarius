@@ -3090,6 +3090,8 @@ MonoBehaviour:
   <AttackRange>k__BackingField: 1.5
   <AttackDamage>k__BackingField: 20
   <AttackKnockback>k__BackingField: 10
+  <SpawnHeight>k__BackingField: 0.8
+  <Item>k__BackingField: {fileID: 6767800840265333703, guid: a500b11dfc5361d4dac656abad1579b7, type: 3}
 --- !u!114 &5417626741561730664
 MonoBehaviour:
   m_ObjectHideFlags: 0

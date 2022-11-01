@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230798580}
-  m_LocalRotation: {x: 0.1784248, y: 1e-45, z: -0, w: 0.9839536}
+  m_LocalRotation: {x: 0.1784248, y: -1e-45, z: -0, w: 0.9839536}
   m_LocalPosition: {x: 2.6761894, y: -6.0877247, z: 8.001466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -287,7 +287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972678484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1e-44, y: -0.00000035762787, z: 4.272002}
+  m_LocalPosition: {x: 1.1e-44, y: -0.00000035762787, z: 4.272002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -330,7 +330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1357878430
 Transform:
   m_ObjectHideFlags: 0
@@ -339,8 +339,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357878426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 28, z: 27.799988}
-  m_LocalScale: {x: 350, y: 350, z: 350}
+  m_LocalPosition: {x: 0, y: 65.5, z: 27.799988}
+  m_LocalScale: {x: 257.75677, y: 257.75677, z: 257.75677}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4251486776382757288}
@@ -1059,7 +1059,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7713297341685222596}
-  m_LocalRotation: {x: 0.06286737, y: -0.14256595, z: 0.009073948, w: 0.9877451}
+  m_LocalRotation: {x: 0.062867366, y: -0.14256592, z: 0.009073943, w: 0.9877451}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1412,6 +1412,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1322957774}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <Shield>k__BackingField
+      value: 
+      objectReference: {fileID: 1357878426}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <Weapon>k__BackingField
       value: 
       objectReference: {fileID: 1181059056}
@@ -1419,6 +1423,22 @@ PrefabInstance:
       propertyPath: <Targeter>k__BackingField
       value: 
       objectReference: {fileID: 5053267734285831740}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <JumpForce>k__BackingField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <DodgeLength>k__BackingField
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <DodgeCooldown>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
+      propertyPath: <DodgeDuration>k__BackingField
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6561479474164134513, guid: 1aad1448636848a45862e0540d015b7c, type: 3}
       propertyPath: <ForceReceiver>k__BackingField
       value: 
